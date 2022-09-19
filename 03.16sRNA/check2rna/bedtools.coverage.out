@@ -1,0 +1,135 @@
+---------------------------------------
+Begin PBS Prologue Tue May 25 23:48:09 EDT 2021
+Job ID:     1924474.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Queue:      inferno
+End PBS Prologue Tue May 25 23:48:09 EDT 2021
+---------------------------------------
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) gcc-compatibility/8.3.0     2) mvapich2/2.3.2
+
+The following have been reloaded with a version change:
+  1) intel/19.0.5 => intel/19.0.3
+
+Error: Unable to open file 012520_015.rrna_16_23.sorted.bam. Exiting.
+Error: Unable to open file 020120_117.rrna_16_23.sorted.bam. Exiting.
+---------------------------------------
+Begin PBS Epilogue Tue May 25 23:48:12 EDT 2021
+Job ID:     1924474.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Resources:  nodes=1:ppn=2,walltime=01:00:00,neednodes=1:ppn=2
+Rsrc Used:  cput=00:00:00,vmem=282216kb,walltime=00:00:03,mem=5328kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-21-r.pace.gatech.edu
+End PBS Epilogue Tue May 25 23:48:12 EDT 2021
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Tue May 25 23:50:31 EDT 2021
+Job ID:     1924495.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Queue:      inferno
+End PBS Prologue Tue May 25 23:50:31 EDT 2021
+---------------------------------------
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) gcc-compatibility/8.3.0     2) mvapich2/2.3.2
+
+The following have been reloaded with a version change:
+  1) intel/19.0.5 => intel/19.0.3
+
+Error: unable to open file or unable to determine types for file /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.bed
+
+- Please ensure that your file is TAB delimited (e.g., cat -t FILE).
+- Also ensure that your file has integer chromosome coordinates in the 
+  expected columns (e.g., cols 2 and 3 for BED).
+Error: unable to open file or unable to determine types for file /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.bed
+
+- Please ensure that your file is TAB delimited (e.g., cat -t FILE).
+- Also ensure that your file has integer chromosome coordinates in the 
+  expected columns (e.g., cols 2 and 3 for BED).
+---------------------------------------
+Begin PBS Epilogue Tue May 25 23:50:33 EDT 2021
+Job ID:     1924495.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Resources:  nodes=1:ppn=2,walltime=01:00:00,neednodes=1:ppn=2
+Rsrc Used:  cput=00:00:00,vmem=0kb,walltime=00:00:02,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-29-l.pace.gatech.edu
+End PBS Epilogue Tue May 25 23:50:33 EDT 2021
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Tue May 25 23:57:42 EDT 2021
+Job ID:     1924539.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Queue:      inferno
+End PBS Prologue Tue May 25 23:57:42 EDT 2021
+---------------------------------------
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) gcc-compatibility/8.3.0     2) mvapich2/2.3.2
+
+The following have been reloaded with a version change:
+  1) intel/19.0.5 => intel/19.0.3
+
+---------------------------------------
+Begin PBS Epilogue Tue May 25 23:57:44 EDT 2021
+Job ID:     1924539.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Resources:  nodes=1:ppn=2,walltime=01:00:00,neednodes=1:ppn=2
+Rsrc Used:  cput=00:00:00,vmem=0kb,walltime=00:00:02,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-17-l.pace.gatech.edu
+End PBS Epilogue Tue May 25 23:57:44 EDT 2021
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Wed May 26 00:12:10 EDT 2021
+Job ID:     1924603.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Queue:      inferno
+End PBS Prologue Wed May 26 00:12:10 EDT 2021
+---------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) gcc-compatibility/8.3.0     2) mvapich2/2.3.2
+
+The following have been reloaded with a version change:
+  1) intel/19.0.5 => intel/19.0.3
+
+---------------------------------------
+Begin PBS Epilogue Wed May 26 00:12:12 EDT 2021
+Job ID:     1924603.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bedtools.coverage
+Resources:  nodes=1:ppn=2,walltime=01:00:00,neednodes=1:ppn=2
+Rsrc Used:  cput=00:00:00,vmem=0kb,walltime=00:00:02,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-16-l.pace.gatech.edu
+End PBS Epilogue Wed May 26 00:12:12 EDT 2021
+---------------------------------------

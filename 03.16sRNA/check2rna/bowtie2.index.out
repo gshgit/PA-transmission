@@ -1,0 +1,789 @@
+---------------------------------------
+Begin PBS Prologue Tue May 25 19:49:07 EDT 2021
+Job ID:     1923108.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bowtie2.index
+Queue:      inferno
+End PBS Prologue Tue May 25 19:49:07 EDT 2021
+---------------------------------------
+Autoloading intel-tbb/2019.8
+Autoloading readline/8.0
+Settings:
+  Output files: "012520_015.rrna.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/sample/012520_015/012520_015.rrna.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 2520
+Using parameters --bmax 1890 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1890 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 10083 (target: 1889)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 10083 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 10084 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2585
+fchr[G]: 4914
+fchr[T]: 8074
+fchr[$]: 10083
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4198579 bytes to primary EBWT file: 012520_015.rrna.1.bt2
+Wrote 2528 bytes to secondary EBWT file: 012520_015.rrna.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 10083
+    bwtLen: 10084
+    sz: 2521
+    bwtSz: 2521
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 631
+    offsSz: 2524
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 53
+    numLines: 53
+    ebwtTotLen: 3392
+    ebwtTotSz: 3392
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:00
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 2520
+Using parameters --bmax 1890 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1890 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 10083 (target: 1889)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 10083 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 10084 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2585
+fchr[G]: 4914
+fchr[T]: 8074
+fchr[$]: 10083
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4198579 bytes to primary EBWT file: 012520_015.rrna.rev.1.bt2
+Wrote 2528 bytes to secondary EBWT file: 012520_015.rrna.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 10083
+    bwtLen: 10084
+    sz: 2521
+    bwtSz: 2521
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 631
+    offsSz: 2524
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 53
+    numLines: 53
+    ebwtTotLen: 3392
+    ebwtTotSz: 3392
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+Settings:
+  Output files: "020120_117.rrna.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/sample/020120_117/020120_117.rrna.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 2102
+Using parameters --bmax 1577 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1577 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8408 (target: 1576)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8408 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8409 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2179
+fchr[G]: 4074
+fchr[T]: 6694
+fchr[$]: 8408
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197594 bytes to primary EBWT file: 020120_117.rrna.1.bt2
+Wrote 2108 bytes to secondary EBWT file: 020120_117.rrna.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8408
+    bwtLen: 8409
+    sz: 2102
+    bwtSz: 2103
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 526
+    offsSz: 2104
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 44
+    numLines: 44
+    ebwtTotLen: 2816
+    ebwtTotSz: 2816
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:00
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 2102
+Using parameters --bmax 1577 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1577 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8408 (target: 1576)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8408 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8409 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2179
+fchr[G]: 4074
+fchr[T]: 6694
+fchr[$]: 8408
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197594 bytes to primary EBWT file: 020120_117.rrna.rev.1.bt2
+Wrote 2108 bytes to secondary EBWT file: 020120_117.rrna.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8408
+    bwtLen: 8409
+    sz: 2102
+    bwtSz: 2103
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 526
+    offsSz: 2104
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 44
+    numLines: 44
+    ebwtTotLen: 2816
+    ebwtTotSz: 2816
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+---------------------------------------
+Begin PBS Epilogue Tue May 25 19:49:11 EDT 2021
+Job ID:     1923108.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bowtie2.index
+Resources:  nodes=1:ppn=4,walltime=06:00:00,neednodes=1:ppn=4
+Rsrc Used:  cput=00:00:01,vmem=0kb,walltime=00:00:04,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-16-l.pace.gatech.edu
+End PBS Epilogue Tue May 25 19:49:11 EDT 2021
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Tue May 25 23:35:18 EDT 2021
+Job ID:     1924360.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bowtie2.index
+Queue:      inferno
+End PBS Prologue Tue May 25 23:35:18 EDT 2021
+---------------------------------------
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+Autoloading intel-tbb/2019.8
+Autoloading readline/8.0
+Settings:
+  Output files: "/storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 2199
+Using parameters --bmax 1650 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1650 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8799 (target: 1649)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8799 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8800 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2303
+fchr[G]: 4251
+fchr[T]: 7016
+fchr[$]: 8799
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197580 bytes to primary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.1.bt2
+Wrote 2204 bytes to secondary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8799
+    bwtLen: 8800
+    sz: 2200
+    bwtSz: 2200
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 550
+    offsSz: 2200
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 46
+    numLines: 46
+    ebwtTotLen: 2944
+    ebwtTotSz: 2944
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:00
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 2199
+Using parameters --bmax 1650 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1650 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8799 (target: 1649)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8799 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8800 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2303
+fchr[G]: 4251
+fchr[T]: 7016
+fchr[$]: 8799
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197580 bytes to primary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.rev.1.bt2
+Wrote 2204 bytes to secondary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//012520_015.rrna_16_23.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8799
+    bwtLen: 8800
+    sz: 2200
+    bwtSz: 2200
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 550
+    offsSz: 2200
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 46
+    numLines: 46
+    ebwtTotLen: 2944
+    ebwtTotSz: 2944
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+Settings:
+  Output files: "/storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 2020
+Using parameters --bmax 1515 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1515 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8083 (target: 1514)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8083 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8084 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2102
+fchr[G]: 3909
+fchr[T]: 6436
+fchr[$]: 8083
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197389 bytes to primary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.1.bt2
+Wrote 2028 bytes to secondary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8083
+    bwtLen: 8084
+    sz: 2021
+    bwtSz: 2021
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 506
+    offsSz: 2024
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 43
+    numLines: 43
+    ebwtTotLen: 2752
+    ebwtTotSz: 2752
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:01
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 2020
+Using parameters --bmax 1515 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 1515 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 8083 (target: 1514)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 8083 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 8084 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 2102
+fchr[G]: 3909
+fchr[T]: 6436
+fchr[$]: 8083
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4197389 bytes to primary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.rev.1.bt2
+Wrote 2028 bytes to secondary EBWT file: /storage/home/hcoda1/2/sgan30/p-sbrown365-0/04.16sRNA/check2rna//020120_117.rrna_16_23.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 8083
+    bwtLen: 8084
+    sz: 2021
+    bwtSz: 2021
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 506
+    offsSz: 2024
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 43
+    numLines: 43
+    ebwtTotLen: 2752
+    ebwtTotSz: 2752
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+---------------------------------------
+Begin PBS Epilogue Tue May 25 23:35:21 EDT 2021
+Job ID:     1924360.sched-torque.pace.gatech.edu
+User ID:    sgan30
+Job name:   bowtie2.index
+Resources:  nodes=1:ppn=4,walltime=06:00:00,neednodes=1:ppn=4
+Rsrc Used:  cput=00:00:01,vmem=0kb,walltime=00:00:03,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-010-24-r.pace.gatech.edu
+End PBS Epilogue Tue May 25 23:35:21 EDT 2021
+---------------------------------------
