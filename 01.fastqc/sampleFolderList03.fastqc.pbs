@@ -1,0 +1,20 @@
+#PBS -N fastqc_sampleFolderList03
+#PBS -A GT-sbrown365
+#PBS -l nodes=1:ppn=4
+#PBS -l walltime=1:00:00
+#PBS -q inferno
+#PBS -j oe
+#PBS -o fastqc_sampleFolderList03.out
+#PBS -m abe
+#PBS -M shuheng.gan@gatech.edu
+
+module load fastqc
+#data=(/storage/coda1/p-sbrown365/0/shared/rich_project_bio-brown-shared/James_dir/trans/Transmission/"Tranmission fastq")
+
+#cat /storage/home/hcoda1/2/sgan30/p-sbrown365-0/01.fastqc/sampleFolderList03 | while read i; do
+
+for i in $(cat /storage/home/hcoda1/2/sgan30/p-sbrown365-0/01.fastqc/sampleFolderList03);do
+    mkdir /storage/home/hcoda1/2/sgan30/p-sbrown365-0/01.fastqc/$i 
+    fastqc /storage/coda1/p-sbrown365/0/shared/rich_project_bio-brown-shared/James_dir/trans/Transmission/"Tranmission fastq"/$i/*_R1_001.fastq.gz /storage/coda1/p-sbrown365/0/shared/rich_project_bio-brown-shared/James_dir/trans/Transmission/"Tranmission fastq"/$i/*_R2_001.fastq.gz -o /storage/home/hcoda1/2/sgan30/p-sbrown365-0/01.fastqc/$i --noextract -f fastq
+done
+
